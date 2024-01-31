@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* ============================================== row-1 ==============================================*/
+    @media only screen and (max-width:600px) {
+        .container-1 .dropdown{
+            display: none;
+        }
+        .container-1 .navbar{
+            justify-content: center;
+        }
+    }
+/* ============================================== row-3 ==============================================*/
+    .row-3 .container .btn{
+        margin-right: 15px;
+    }
+    .row-3 .container li{
+        list-style: none;
+    }
+    .row-3 .container .offcanvas a:hover{
+        font-weight: bold;
+        color: rgb(8, 140, 8);
+    }
+/* ============================================== row-4 ==============================================*/
+    .container-4 .splide-costom1{
+        background:url("./image/slider/slide-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        height: 550px;
+        width: 100%;
+        border-radius: 10PX;
+    }
+    .container-4 .promo1, .promo2{
+        height: 100%;
+        padding-top: 90px;
+    }
+    .container-4 .splide-costom2{
+        background:url("./image/slider/slider-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        height: 550px;
+        width: 100%;
+    }
+
+/* ============================================== row-5 ==============================================*/
+    .container-5 .product-1{
+        width: 15%;
+    }
+    .carousel-inner{
+        padding-top: 50px;
+    }
+    .container-5 .category-1, .category-2, .category-3, .category-4, .category-5, .category-6, .category-7, .category-8, .category-9, .category-10, .category-11, .category-12{
+        text-decoration: none;
+    }
+    .contanet-5 .carousel-item{
+        border: 10px solid black;
+    }
+    .container-5 .carousel-item:hover{
+        border-color:rgb(8, 140, 8) ;
+        box-shadow: 1px 1px 10px rgba(0, 255, 0, 0.5) ;
+    }
+    .container-5 .priv_arrow, .next_arrow {
+        z-index: 1;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        background-color: rgb(216, 216, 216);
+        line-height: 40px;
+        display: inline-block;
+    }
+    .container-5 .priv_arrow{
+        top:1px;
+        right: 5px;
+        font-weight: bold;
+    }
+    .container-5 .next_arrow{
+        top: 1px;
+        right: 60px;
+    }
+    .container-5 .priv_arrow:hover, .next_arrow:hover{
+        background-color: rgb(8, 140, 8);
+    }
+    .container-5 .slick-prev:before, 
+    .container-5 .slick-next:before {
+        font-size: 5px;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .container-5 .position-costom{
+        top: 30px;
+    }
+ /* ============================================== row-6 ==============================================*/   
+    .container-6 .banner-costom1{
+        background-image: url(./image/baner/grocery-banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        height: 220px;
+        width: 48%;
+        border-radius: 5px;
+    }
+    .container-6 .banner-costom2{
+        background-image: url(./image/baner/grocery-banner-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        height: 220px;
+        width: 48%;
+        border-radius: 5px;
+    }
+
+/* ============================================== row-7 ==============================================*/  
+    .container-7 .card:hover{
+        border-color:rgb(8, 140, 8) ;
+        box-shadow: 1px 1px 10px rgba(8, 140, 8, 0.5) ;
+    }
+    .container-7 .card .view .bi{
+        display: none;
+        background-color: rgb(228, 228, 228);
+    }
+    .container-7 .card:hover .view .bi{
+        display: inline-block;
+        font: rgb(8, 140, 8);
+    }
+    .container-7 .card .view .bi:hover{
+        border-color:rgb(8, 140, 8);
+        background-color: rgb(8, 140, 8);
+    }
+
+/* ============================================== row-8 ==============================================*/  
+    .container-8 .col .card-costom{
+        background-image: url(./image/baner/banner-deal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+
+    }
+    .container-8 .card:hover{
+        border-color:rgb(8, 140, 8) ;
+        box-shadow: 1px 1px 10px rgba(8, 140, 8, 0.5) ;
+    }
+    .container-8 .card .view .bi{
+        display: none;
+        background-color: rgb(228, 228, 228);
+    }
+    .container-8 .card:hover .view .bi{
+        display: inline-block;
+        font: rgb(8, 140, 8);
+    }
+    .container-8 .card .view .bi:hover{
+        border-color:rgb(8, 140, 8);
+        background-color: rgb(8, 140, 8);
+    }
+/* ============================================== row-10 ==============================================*/  
+    .container-10 .content-3{
+        font-size: 14px;
+    }
+    .container-10 .content-3 .list-inline-2 {
+        border: 2px;
+    }
+ /***************** responsive ******************/
