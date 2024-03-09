@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Visibility dengan JavaScript</title>
+  <style>
+    #myElement {
+      width: 300px;
+      height: 150px;
+      background-color: lightblue;
+      margin: 20px;
+    }
+
+    #toggleButton {
+      margin: 10px;
+      padding: 5px;
+      cursor: pointer;
+      background-color: lightcoral;
+      color: white;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      #myElement {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Elemen yang akan diatur visibilitasnya -->
+<div id="myElement">Saya adalah elemen yang dapat disembunyikan.</div>
+
+<!-- Tombol untuk menampilkan/menyembunyikan elemen -->
+<button id="toggleButton" onclick="toggleVisibility()">Toggle Visibilitas</button>
+
+<script>
+  // Fungsi untuk menampilkan/menyembunyikan elemen
+  function toggleVisibility() {
+    var myElement = document.getElementById('myElement');
+
+    // Toggle visibilitas elemen
+    if (myElement.style.display === 'none' || window.getComputedStyle(myElement).display === 'none') {
+      myElement.style.display = 'block';
+    } else {
+      myElement.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
