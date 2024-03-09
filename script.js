@@ -88,7 +88,50 @@ class ListLeft {
 // Membuat instance dari class
 const listLeftInstance = new ListLeft();
 
+// SLIDER KE KIRI SATU PER SATU MENGGUNAKAN SLICK.JS
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+});
 
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+$(document).ready(function(){
+    $('.autoplay').slick({
+        dots:false,
+        infinite: true,
+        speed:300,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        nextArrow:'<span class="priv_arrow border rounded-circle"><i class="bi bi-chevron-right"></i></span>',
+        prevArrow:'<span class="next_arrow border rounded-circle"><i class="bi bi-chevron-left"></i></span>',
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+    })
+}); 
 
 // footer 
 const tahunSekarangElement = document.getElementById("tahunSekarang");
